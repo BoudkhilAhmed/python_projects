@@ -6,8 +6,8 @@ new_operation = False
 
 def update_calc(char):
     global new_operation
-    operation_txt = operation.get()
-    operation_result = compute_opr(operation.get())
+    operation_txt = operation.get().strip('0')
+    operation_result = compute_opr(operation_txt)
 
     if char == '=':
         update_history(operation_txt)
@@ -183,5 +183,6 @@ card.grid(row=1, column=0, sticky="nsew")
 display_opr.grid(row=0, column=0, columnspan=4, sticky="nsew", pady=(0, 8))
 display_result.grid(row=1, column=0, columnspan=4, sticky="nse", pady=(0, 8))
 keys.grid(row=2, column=0, sticky="nsew")
+
 
 calc.mainloop()
