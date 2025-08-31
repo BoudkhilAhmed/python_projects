@@ -1,7 +1,7 @@
 import time
 import winsound
 #----------------------------------------------------
-def running(mins, seconds):
+def CountDown(mins, seconds):
     seconds >= 60
     while True:
         print(f'{mins}:{str(seconds).zfill(2)}')
@@ -21,4 +21,5 @@ def running(mins, seconds):
 
 mins = int(input('mins : '))
 seconds = int(input('seconds : '))
-running(mins, seconds)
+
+CountDown(mins, seconds)
