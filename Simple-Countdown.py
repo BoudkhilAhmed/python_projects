@@ -2,7 +2,6 @@ import time
 import winsound
 #----------------------------------------------------
 def CountDown(mins, seconds):
-    seconds >= 60
     while True:
         print(f'{mins}:{str(seconds).zfill(2)}')
         
