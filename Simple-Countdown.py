@@ -1,5 +1,5 @@
 import winsound
-#----------------------------------------------------
+#----------------------------------
 def CountDown(mins, seconds):
     while True:
         print(f'{mins}:{str(seconds).zfill(2)}')
