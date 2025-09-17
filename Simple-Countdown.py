@@ -1,3 +1,4 @@
+import time
 import winsound
 #----------------------------------
 def CountDown(mins, seconds):
